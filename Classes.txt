@@ -1,0 +1,74 @@
+﻿1. Left Pannel
+ actors.txt와 동일
+
+2. Center Pannel
+ 1)General Settings
+  (1) Name:	
+	  -> TextBox
+  (2) EXP Curve:
+	  -> TextBox [ , , , ] 
+	  1) EXP Table
+		1-1) To Next Level	//L1- L98
+		1-2) Total			//L1-L99
+	  2) Base Value			// 수치조정 10-50
+	  3) Extra Value		// 수치조정 0-40
+	  4) Acceleration A		// 수치조정 10-50
+	  5) Acceleration B		// 수치조정 10-50
+  (3) Parameter Curves	// 직업별 캐릭터 능력지 그래프구간
+	MHP | MMP | ATK | DEF 
+	MAT | MDF | AGI | LUK
+  (4) Skills	// 레벨별 배우는 스킬
+	Level | Skill | Note
+	1) Skill
+	  1-1) Level			// 수지조정 1-99
+	  1-2) Skill to Learn	// 스크롤 선택 (skills 목록)
+	  1-3) Note
+		   -> TextBox
+
+3. Right Pannel
+ actors.txt와 동일
+
+ ***
+   (2) EXP Curve:
+	  1) EXP Table
+	  : A list of EXP necessary for each level. Automatically calculated based on a combination of four parameters.
+	  2) Base Value
+	  : Base value for calculating necessary EXP.
+	  3) Extra Value
+	  : A simple extra value added to the EXP necessary for each level.
+	  4) Acceleration A
+	  : A value representing the rate at which to increase the necessary EXP. Affects the entire EXP curve.
+	  5) Acceleration B
+	  : A value representing the degree at which to exponentially increase the necessary EXP. Mainly affects the high-level range.
+   (3) Parameter Curves
+	  1) MHP
+		:Maximum hit point. Represents the maximum amount of damage that the character can withstand.
+	  2) MMP
+		:Maximum magic point. Represents the character's maximum power for using magic skills.
+	  3) ATK
+		:Attack power. Affects things like the amount of damage done to enemies.
+	  4) DEF
+		:Defense power. Affects things like the amount of damage taken from enemies.
+	  5) MAT
+		:Magic attack power. Affects things like the power of the magic the character uses.
+	  6) MDF
+		:Magic defense power. Affects things like the power of magic attacks from enemies.
+	  7) AGI
+		:Agillity. Affects things like attack order.
+	  8) LUK
+		:Luck. Affects things like the chance of status ailments occurring.
+   (4) Skills
+	  1) Skills to Learn
+	  : Skills mastered at level-up for actors in this class. To add a new setting, double-click a blank space.
+	  2) Level
+	  : The level at which item are mastered.
+	  3) Skill to Learn
+	  : Type of the item to master.
+	  4) Note
+	  : A memo area where you can freely add notes.
+	  5) OK
+	  : Saves any changes and closes this dialog box.
+	  6) Cancel
+	  : Closes this dialog box without saving any changes.
+
+ ***
